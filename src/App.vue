@@ -9,7 +9,7 @@
         <v-list>
           <v-list-tile>
             <v-list-tile-title class="title">
-              Application
+              板块推荐系统
             </v-list-tile-title>
           </v-list-tile>
         </v-list>

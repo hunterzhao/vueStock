@@ -72,13 +72,13 @@
                  </v-flex>
                  <v-flex md2>
                      <div>
-			           <v-btn large color="yellow" fab>
+			           <v-btn large color="secondary" fab>
 			           	   <v-icon x-large dark>play_circle_outline</v-icon>
 			           </v-btn>
 			         </div>
                  </v-flex>
                  <v-flex md12>
-                       <v-card dark color="green">
+                       <v-card dark color="secondary">
                          <v-subheader>板块选择</v-subheader>
                          <multiselect v-model="value" tag-placeholder="Add this as new tag" placeholder="Search or add a tag" label="name" track-by="code" :options="options" :multiple="true" :taggable="true" @tag="addTag"></multiselect>
                      </v-card>
@@ -96,7 +96,7 @@
                                       </v-card>
 					              </v-flex>
                                   <v-flex md2 >
-                                      <v-card dark color="yellow" height="100">
+                                      <v-card dark color="secondary" height="100">
                                              <v-card-title>关联度</v-card-title>
                                              <v-card-text>
                                                    <span> {{item.rate}}</span>
@@ -115,102 +115,16 @@
 				              </v-layout>
 					    </div>
                  </v-flex>
+                 <v-flex md12>
+                     <div>
+			           <v-card large color="gray" fab>
+			           	   <v-icon x-large dark>alarm</v-icon>
+			           	   为您加速了1.2s
+			           </v-card>
+			         </div>
+                 </v-flex>
              </v-layout>
          </v-container>
-              <!--  <div class="col-lg-8">
-		               
-
-               
-                <div class="col-lg-2">
-                        <button class="btn btn-primary" style="text-align:right;float:right;">计算</button>
-                </div>
-         </div>
-
-         <div class="row"> 
-               <div class="col-lg-10">
-		            <h2>板块集合</h2>  
-		         <div>
-				  <label class="typo__label">已选中</label>
-				  <multiselect v-model="value" tag-placeholder="Add this as new tag" placeholder="Search or add a tag" label="name" track-by="code" :options="options" :multiple="true" :taggable="true" @tag="addTag"></multiselect>
-				
-				</div>
-
-               
-         </div>
-         
-         <div class="row"> 
-               <div class="col-lg-6">
-		            <h2>板块关联情况</h2>  
-		            <table class="table table-hover">
-						 <thead>
-						    <tr>
-						      <th>板块名称</th>
-						      <th>涨跌幅区间</th>
-						      <th>关系</th>
-						      <th>板块名称</th>
-						      <th>涨跌幅区间</th>
-						      <th>关联度</th>
-						    </tr>
-						 </thead>
-						 <tbody>
-						    <tr>
-						      <td>电子元器件</td>
-						      <td>涨幅大于2%</td>
-						      <td>====></td>
-						      <td>半导体</td>
-						      <td>涨幅大于2%</td>
-						      <td>0.8019</td>
-						    </tr>
-						    <tr>
-						      <td>电子元器件</td>
-						      <td>跌幅大于2%</td>
-						      <td>====></td>
-						      <td>半导体</td>
-						      <td>跌幅大于2%</td>
-						      <td>0.8621</td>
-						    </tr>
-						     <tr>
-						      <td>化纤</td>
-						      <td>跌幅大于2%</td>
-						      <td>====></td>
-						      <td>半导体</td>
-						      <td>跌幅大于2%</td>
-						      <td>0.8118</td>
-						    </tr>
-						</tbody>
-					</table> 
-               </div>
-               <div class="col-lg-4">
-                    <h2>热点新闻</h2>
-                    <div class="table-responsive">
-					  <table class="table">
-					    <thead>
-					      <tr>
-					        <th>id</th>
-					        <th>内容</th>
-					        </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td>1</td>
-					        <td>未来石油价格要涨</td>
-					      <tr>
-					        <td>2</td>
-					        <td>天然气开采有了新的突破</td>
-					      </tr>
-					      <tr>
-					        <td>3</td>
-					        <td>牛市来了</td>
-					      </tr>
-					      <tr>
-					        <td>4</td>
-					        <td>三个月的目标完成了</td>
-					      </tr>
-					    </tbody>
-					  </table>
-					</div>
-               </div>
-         </div> -->
         </v-app>
     </div>
 </template>
