@@ -1,6 +1,6 @@
-# VueJSNodeJSTutorial
+# VueStock
 
-This is a basic CRUD Application. Which utilizes frontend of VueJS and backend of Node.js
+This is a basic CRUD Application. Which utilizes frontend of VueJS and backend of Node.js and vuetifyjs
 
 ## Getting Started
 
