@@ -28,7 +28,7 @@
 			                </div>
 		             </v-card>
 		         </v-flex>
-		         <v-flex d-flex md2>
+		         <v-flex md2>
 		             <!-- <v-card dark color="red"> -->
 		                    <div>
 					           <v-btn large color="red" fab  @click.stop="dialog = true">

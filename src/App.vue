@@ -4,7 +4,7 @@
   <v-container fluid grid-list-md text-md-center>
   <v-layout row wrap>
   <v-flex md2>
-    <v-navigation-drawer permanent light>
+    <v-navigation-drawer permanent light height="600%">
       <v-toolbar flat>
         <v-list>
           <v-list-tile>
@@ -16,7 +16,6 @@
       </v-toolbar>
       <v-divider></v-divider>
       <v-list dense class="pt-0">
-        <!-- <v-list-tile v-for="item in items" :key="item.title" @click="linkTo(item.path)"> -->
         <v-list-tile>
           <v-list-tile-action>
             <v-icon>dashboard</v-icon>
@@ -37,8 +36,6 @@
       </v-list>
     </v-navigation-drawer>
 </v-flex>
-  <!--   <router-link to="/Factor">Factor</router-link>  
-    <router-link to="/Plate">Plate</router-link>   -->
 <v-flex md10>
      <v-card dark color="yellow">
          <router-view></router-view>
