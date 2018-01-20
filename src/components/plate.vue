@@ -88,10 +88,10 @@
 					          <v-layout row wrap>
 					              <v-flex md4 offset-md1>
                                       <v-card dark :color="item.color" height="100">
-                                             <v-card-title>{{item.left}}</v-card-title>
+                                             <v-card-title>今日：({{item.today_rate}}) &nbsp;&nbsp;&nbsp;&nbsp; {{item.left}} </v-card-title>
                                              <v-card-text>
                                                    <v-icon>{{item.left_status}}</v-icon>
-                                                   <span>{{item.left_rate}}</span>
+                                                   <span>{{item.left_rate}} </span>
 									         </v-card-text>
                                       </v-card>
 					              </v-flex>
@@ -119,7 +119,7 @@
                      <div>
 			           <v-card large color="gray" fab>
 			           	   <v-icon x-large dark>alarm</v-icon>
-			           	   为您加速了1.2s
+			           	   为您加速了0.89s
 			           </v-card>
 			         </div>
                  </v-flex>
@@ -150,7 +150,7 @@ export default{
 	        { name: '仓储物流', code: '1' },
 	        { name: '电器机械', code: '2' },
 	        { name: '电热供应', code: '3' },
-	        { name: '电子设备', code: '4' },
+	        { name: '电子元器件', code: '4' },
 	        { name: '金属制品', code: '5' },
 	        { name: '建材家居', code: '6' },
 	        { name: '酒及饮料', code: '7' },
@@ -158,11 +158,15 @@ export default{
 	        { name: '农林牧渔', code: '9' },
 	        { name: '煤炭石油', code: '10' },
 	        { name: '券商', code: '11' },
-	        { name: '生态环境', code: '12' }
+	        { name: '生态环境', code: '12' },
+	        { name: '半导体', code: '13' },
+	        { name: '化纤', code: '14' },
 	      ],
 	      items:[
-             {left: '电子元器件', left_rate: '涨2%', left_status: 'trending_up', right:'半导体', right_rate: '涨2%', rate:'0.8019', right_status: 'trending_up', color: 'red'},
-             {left: '电子元器件', left_rate: '跌2%', left_status: 'trending_down', right:'半导体', right_rate: '跌2%', rate:'0.8621', right_status: 'trending_down', color: 'green'}
+             {left: '电子元器件', left_rate: '涨大于2%', today_rate:'+0.21%', left_status: 'trending_up', right:'半导体', right_rate: '涨2%', rate:'0.8019', right_status: 'trending_up', color: 'red'},
+             {left: '电子元器件', left_rate: '跌大于2%', today_rate:'+0.21%', left_status: 'trending_down', right:'半导体', right_rate: '跌2%', rate:'0.8621', right_status: 'trending_down', color: 'green'},
+             {left: '化纤', left_rate: '跌大于2%', today_rate:'-0.13%', left_status: 'trending_down', right:'电子元器件', right_rate: '跌大于2%', rate:'0.8091', right_status: 'trending_down', color: 'green'},
+             {left: '化纤', left_rate: '跌大于2%', today_rate:'-0.13%', left_status: 'trending_down', right:'半导体', right_rate: '跌大于2%', rate:'0.8118', right_status: 'trending_down', color: 'green'}
 	      ]
 	    }
 	   },

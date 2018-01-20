@@ -27,7 +27,7 @@
 
          <v-list-tile>    
           <v-list-tile-action>
-            <v-icon>question_answer</v-icon>
+            <v-icon>dashboard</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title><router-link to="/Plate">板块联动</router-link></v-list-tile-title>
